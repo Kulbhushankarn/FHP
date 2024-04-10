@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "EditView";
+    Layout = null;
+}
+
+@Styles.Render("~/Content/EditView.css")
+
+
+@* <div class="header">
+        <h1>FHP Employee Form</h1>
+    </div> *@
+
+
+
+
+
+<div class="container">
+    <form id="employeeForm">
+        <label>Sr No:</label>
+        <input type="text" id="SrNum" name="serialnumber"><br>
+        <div class="SelectClass">
+            <label>Prefix:</label>
+            <select class="PrefixDropdown">
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+
+            </select>
+        </div>
+        <br>
+        <label>First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br>
+
+        <label>Middle Name:</label>
+        <input type="text" id="middleName" name="middleName"><br>
+
+        <label>Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+
+        <label>DOB:</label>
+        <input type="date" id="dob" name="dob"><br>
+
+        <div class="SelectClass">
+            <label>Prefix:</label>
+            <select class="PrefixDropdown">
+                <option value="B-Tech">B-Tech</option>
+                <option value="M-tech">M-Tech</option>
+                <option value="BCA">BCA</option>
+            </select>
+        </div>
+        <br>
+
+
+        <label>Current Company:</label>
+        <input type="text" id="CurrentCompany" name="CurrentCompany"><br>
+        <label>Joining Date:</label>
+        <input type="date" id="joiningDate" name="joiningDate"><br>
+        <label>Current Address:</label>
+        <textarea id="currentAddress" name="currentAddress"></textarea> <br>
+
+
+
+
+
+         <button type="button" id="add">Add</button>
+        <button type="button" id="edit">Edit</button>
+        <button type="button" id="clear">Clear</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+

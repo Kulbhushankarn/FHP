@@ -1,0 +1,62 @@
+﻿
+/* Basic CSS styles for the container */
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 700px; /* Adjust as needed */
+    background-color: lightgray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styles for form inputs */
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+/* Style for buttons */
+button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+/* Style for header */
+.header {
+    background-color: dimgray;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.PrefixDropdown {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+

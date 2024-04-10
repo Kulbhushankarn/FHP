@@ -1,0 +1,107 @@
+﻿
+@model List<FHP_VO.EmployeeData>
+@{
+
+    ViewBag.Title = "Home Page";
+    Layout = null;
+}
+
+<main>
+
+    <div class="navbar">
+
+        <div class="logo">
+            <a href="#" class="logoTitle">FHP</a>
+        </div>
+
+        <div tabindex="0" class="menu-toggle">&#9776;</div>
+        <div class="menu">
+
+
+            <a href="@Url.Action("New", "Home")" class="new">New</a>
+          @*  <a id="update-btn" herf="@Url.Action("Update", "Home", new {buttonClicked="Update",serialNo="13"})">Update</a>*@
+             <a  id="update-btn" href="@Url.Action("Update", "Home")" class="Update">Update</a>
+            <a id="View-Data" href="@Url.Action("Views", "Home")" class="View">View</a>
+            <a id="" href="@Url.Action("delete", "Home")" class="Delete">Delete</a>
+            
+            <a href="#" class="clearSearchFilter">Clear Search/Filter</a>
+            <a href="@Url.Action("About", "Home")" class="aboutUs">About Us</a>
+
+            <div class="search-bar">
+                <input type="search" placeholder="">
+            </div>
+            <div class="search-button">
+                <button type="button"> Search</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="table-container">
+            <h2></h2>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+
+                        @* <th><input type="checkbox" id="master-CheckBox" onclick="SelectAllCheckbox()" /></th>*@
+                        <th></th>
+                        <th>S.No <i class="sort-icon arrow-up">⇑</i><i class="sort-icon arrow-down">⇓</i></th>
+                        <th>Prefix <i class="sort-icon arrow-up">⇑</i><i class="sort-icon arrow-down">⇓</i></th>
+                        <th>First Name <i class="sort-icon arrow-up">⇑</i><i class="sort-icon arrow-down">⇓</i></th>
+                        <th>Middle Name <i class="sort-icon arrow-up">⇑</i><i class="sort-icon arrow-down">⇓</i></th>
+                        <th>Last Name <i class="sort-icon arrow-up">⇑</i><i class="sort-icon arrow-down">⇓</i></th>
+                        <th>Current Address <i class="sort-icon arrow-up">⇑</i><i class="sort-icon arrow-down">⇓</i></th>
+                        <th>DOB <i class="sort-icon arrow-up">⇑</i><i class="sort-icon arrow-down">⇓</i></th>
+                        <th>Education <i class="sort-icon arrow-up">⇑</i><i class="sort-icon arrow-down">⇓</i></th>
+                        <th>Company Name <i class="sort-icon arrow-up">⇑</i><i class="sort-icon arrow-down">⇓</i></th>
+                        <th>Joining Date <i class="sort-icon arrow-up">⇑</i><i class="sort-icon arrow-down">⇓</i></th>
+                    </tr>
+
+
+                </thead>
+                <tr id="filterRow">
+                    <td></td>
+                    <td><input type="search" /></td>
+                    <td><input type="search" /></td>
+                    <td><input type="search" /></td>
+                    <td><input type="search" /></td>
+                    <td><input type="search" /></td>
+                    <td><input type="search" /></td>
+                    <td><input type="search" /></td>
+                    <td><input type="search" /></td>
+                    <td><input type="search" /></td>
+                    <td><input type="search" /></td>
+                </tr>`
+                <tbody>
+                    @foreach (var obj in Model)
+                    {
+                        <tr>
+                            <td><input type="checkbox" class="selectedRows" id="@obj.SrNo"></td>
+                            <td>@obj.SrNo</td>
+                            <td>@obj.Prefix</td>
+                            <td>@obj.FirstName</td>
+                            <td>@obj.MiddleName</td>
+                            <td>@obj.LastName</td>
+                            <td>@obj.DOB</td>
+                            <td>@obj.Qualification</td>
+                            <td>@obj.CurrentAddress</td>
+                            <td>@obj.CurrentCompany</td>
+                            <td>@obj.DOJ</td>
+
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    @Styles.Render("~/Content/Index.css")
+    @Scripts.Render("~/Content/JS/Index.js")
+
+
+
+
+</main>

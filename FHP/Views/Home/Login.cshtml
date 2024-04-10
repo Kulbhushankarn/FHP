@@ -1,0 +1,22 @@
+﻿@using FHP_VO
+@model FHP_VO.User
+
+
+@{
+    ViewBag.Title = "Login";
+    Layout=null;
+}
+@Styles.Render("~/Content/Login.css")
+
+<div id="login-container" style="width:40%">
+    <h2> Login</h2>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        @Html.ValidationSummary(false)
+        <input type="text" name="Username" placeholder="Username" required><br>
+        @Html.ValidationMessageFor(model => model.UserName)
+        <input type="password" name="Password" placeholder="Password" required><br>
+        @Html.ValidationMessageFor(model => model.Password)
+        <input type="submit" value="Login">
+    }
+</div>

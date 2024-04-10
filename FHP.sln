@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FHP", "FHP\FHP.csproj", "{66FFB514-ABF1-44C1-801A-0B00695ACF7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FHP_BM", "..\..\FileHandlingProgram(Layers) (3)\FileHandlingProgram(Layers)\VO_FHP\FHP_BM.csproj", "{4BA1D4BC-9D0A-4719-A216-C54692C8839D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FHP_DL", "..\..\FileHandlingProgram(Layers) (3)\FileHandlingProgram(Layers)\FHP_DL\FHP_DL.csproj", "{969B9D24-C35A-4CCC-8776-62225A05EA68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FHP_VO", "..\..\FileHandlingProgram(Layers) (3)\FileHandlingProgram(Layers)\BM_FHP\FHP_VO.csproj", "{88E7D50D-7DF2-404B-AE81-0C30C7EF5AC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FHP_Resource", "..\..\FileHandlingProgram(Layers) (3)\FileHandlingProgram(Layers)\FHP_Resource\FHP_Resource.csproj", "{0C6E5D8F-706E-403B-B36A-70190E0BE8B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Init", "..\..\FileHandlingProgram(Layers) (3)\FileHandlingProgram(Layers)\Init\Init.csproj", "{A52E402C-1CD2-453C-B0FA-42FFD0159865}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66FFB514-ABF1-44C1-801A-0B00695ACF7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66FFB514-ABF1-44C1-801A-0B00695ACF7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66FFB514-ABF1-44C1-801A-0B00695ACF7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66FFB514-ABF1-44C1-801A-0B00695ACF7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA1D4BC-9D0A-4719-A216-C54692C8839D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA1D4BC-9D0A-4719-A216-C54692C8839D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA1D4BC-9D0A-4719-A216-C54692C8839D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA1D4BC-9D0A-4719-A216-C54692C8839D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{969B9D24-C35A-4CCC-8776-62225A05EA68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{969B9D24-C35A-4CCC-8776-62225A05EA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{969B9D24-C35A-4CCC-8776-62225A05EA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{969B9D24-C35A-4CCC-8776-62225A05EA68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E7D50D-7DF2-404B-AE81-0C30C7EF5AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E7D50D-7DF2-404B-AE81-0C30C7EF5AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E7D50D-7DF2-404B-AE81-0C30C7EF5AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E7D50D-7DF2-404B-AE81-0C30C7EF5AC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C6E5D8F-706E-403B-B36A-70190E0BE8B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C6E5D8F-706E-403B-B36A-70190E0BE8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C6E5D8F-706E-403B-B36A-70190E0BE8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C6E5D8F-706E-403B-B36A-70190E0BE8B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A52E402C-1CD2-453C-B0FA-42FFD0159865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A52E402C-1CD2-453C-B0FA-42FFD0159865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A52E402C-1CD2-453C-B0FA-42FFD0159865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A52E402C-1CD2-453C-B0FA-42FFD0159865}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E913C963-444F-411D-9E7A-E6EB2380E2DD}
+	EndGlobalSection
+EndGlobal

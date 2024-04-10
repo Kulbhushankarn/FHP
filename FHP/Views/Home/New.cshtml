@@ -1,0 +1,129 @@
+﻿@using FHP_VO
+@model FHP_VO.EmployeeData
+@{
+    ViewBag.Title = "New";
+    var action = ViewData["Action"] as string ?? "New";
+    Layout = null;
+}
+
+
+
+
+@Styles.Render("~/Content/EditView.css")
+
+
+<div class="header">
+    <h1>FHP Employee Form</h1>
+</div>
+
+<body>
+    <div class="container">
+        @using (Html.BeginForm(action, "Home", FormMethod.Post,new { id = "employee-details-form" }))
+        {
+            @Html.ValidationSummary(true)
+            <label>Serial Number:</label>
+            @Html.TextBoxFor(model => model.SrNo, new { @class = "form-control", id = "SerialNo" })<br>
+
+            <label for="Prefix">Prefix:</label>
+            @Html.TextBoxFor(model => model.Prefix, new { @class = "form-control", id = "Prifix"    })<br>
+
+            <label for="FirstName">First Name:</label>
+            @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", placeholder = "FirstName", required = "required" })
+            @Html.ValidationMessageFor(model => model.FirstName)<br>
+
+            <label for="MiddleName">Middle Name:</label>
+            @Html.TextBoxFor(model => model.MiddleName, new { @class = "form-control" })<br>
+
+            <label for="LastName">Last Name:</label>
+            @Html.TextBoxFor(model => model.LastName, new { @class = "form-control" })<br>
+
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob" class="form-control">
+            @Html.ValidationMessageFor(model => model.DOB, "", new { @class = "text-danger" })<br>
+
+            <label for="CurrentAddress">Current Address:</label>
+            @Html.TextBoxFor(model => model.CurrentAddress, new { @class = "form-control" })<br>
+
+            <label for="Education">Education:</label>
+            @Html.TextBoxFor(model => model.Qualification, new { @class = "form-control" })<br>
+
+            <label for="CurrentCompany">Current Company:</label>
+            @Html.TextBoxFor(model => model.CurrentCompany, new { @class = "form-control" })<br>
+
+            <label for="joiningDate">Joining Date:</label>
+            @Html.TextBoxFor(model => model.DOJ, new { type = "date", @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.DOJ, "", new { @class = "text-danger" })<br>
+
+            <!-- Add other input fields here -->
+
+            @* <button type="submit" class="btn btn-primary">Submit</button>*@
+            <!-- Buttons -->
+            <div class="navigations">
+                <button id="add" type="submit" class="btn btn-primary hidden">Add</button>
+                <button id="edit" type="submit" class="btn btn-primary hidden">Edit</button>
+                <button id="clear" type="button" class="btn btn-danger hidden">Clear</button>
+                <button id="first" type="button" class="btn btn-secondary hidden">First</button>
+                <button id="previous" type="button" class="btn btn-secondary hidden">Previous</button>
+                <button id="next" type="button" class="btn btn-secondary hidden">Next</button>
+                <button id="last" type="button" class="btn btn-secondary hidden">Last</button>
+            </div>
+
+        }
+    </div>
+    <link href="~/Content/bootstrap-utilities.min.css" rel="stylesheet" />
+    @Scripts.Render("~/Content/JS/EditView.js")
+</body>
+
+
+
+
+
+@* <br>
+    <label>First Name:</label>
+    <input type="text" id="firstName" name="firstName"> placeholder="firstName"<br>
+    @Html.ValidationMessageFor(model => model.UserName)
+
+
+
+
+    <label>Middle Name:</label>
+    <input type="text" id="middleName" name="middleName"><br>
+
+    <label>Last Name:</label>
+    <input type="text" id="lastName" name="lastName"><br>
+
+    <label>DOB:</label>
+    <input type="date" id="dob" name="dob"><br>
+
+    <div class="SelectClass">
+        <label>Prefix:</label>
+        <select class="PrefixDropdown">
+            <option value="B-Tech">B-Tech</option>
+            <option value="M-tech">M-Tech</option>
+            <option value="BCA">BCA</option>
+        </select>
+    </div>
+    <br>
+
+
+    <label>Current Company:</label>
+    <input type="text" id="CurrentCompany" name="CurrentCompany"><br>
+    <label>Joining Date:</label>
+    <input type="date" id="joiningDate" name="joiningDate"><br>
+    <label>Current Address:</label>
+    <textarea id="currentAddress" name="currentAddress"></textarea> <br>
+*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
