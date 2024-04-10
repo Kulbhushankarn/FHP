@@ -16,7 +16,7 @@ namespace FHP.App_Start
             EntityHandle entityHandle = new EntityHandle();
             ValueObject_VO Object = new ValueObject_VO();
             User user = new User();
-            string  connectionString = "Server=LAPTOP-26NGBJQ5;Database=FHP;Trusted_Connection=True; TrustServerCertificate=True";
+            string  connectionString = "Server=DESKTOP-26MMTP5;Database=MVC_Demo;Trusted_Connection=True; TrustServerCertificate=True";
             entityHandle.EmployeeDatObject = new FileHandingDB(connectionString);
             
 

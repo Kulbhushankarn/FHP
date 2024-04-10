@@ -52,7 +52,7 @@ namespace FHP.Controllers
             ValidateUsers validateUsers = new ValidateUsers();
             if (ModelState.IsValid)
             {
-                connectionString = "Server=LAPTOP-26NGBJQ5;Database=FHP;Trusted_Connection=True; TrustServerCertificate=True";
+                connectionString = "Server=DESKTOP-26MMTP5;Database=MVC_Demo;Trusted_Connection=True; TrustServerCertificate=True";
                 validateUsers.UserDataObject = new ReadUsersDataDB(connectionString);
               
                 bool  IsUserExist = validateUsers.isUserPresent(model);
@@ -222,7 +222,7 @@ namespace FHP.Controllers
             {
                 long serial = long.Parse(serialNo);
                 EmployeeData empToBeDelete = entityHandle.ReadAllDataData().Find(s => s.SrNo == serial);
-                entityHandle.DeleteData(empToBeDelete);
+               // entityHandle.(empToBeDelete);
 
             }
 
@@ -235,8 +235,6 @@ namespace FHP.Controllers
                 return Json(new { success = false });
             }
         }
-
-
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";

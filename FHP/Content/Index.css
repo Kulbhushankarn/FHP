@@ -24,8 +24,8 @@ body {
 }
 
 .navbar {
-    background-color: darkslategray;
-    color: aqua;
+    background-color: black;
+    color: #cbcbcb;
     padding: 10px;
     display: flex;
     justify-content: space-between;

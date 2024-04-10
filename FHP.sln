@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FHP_VO", "..\..\FileHandlin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FHP_Resource", "..\..\FileHandlingProgram(Layers) (3)\FileHandlingProgram(Layers)\FHP_Resource\FHP_Resource.csproj", "{0C6E5D8F-706E-403B-B36A-70190E0BE8B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Init", "..\..\FileHandlingProgram(Layers) (3)\FileHandlingProgram(Layers)\Init\Init.csproj", "{A52E402C-1CD2-453C-B0FA-42FFD0159865}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{0C6E5D8F-706E-403B-B36A-70190E0BE8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C6E5D8F-706E-403B-B36A-70190E0BE8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C6E5D8F-706E-403B-B36A-70190E0BE8B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A52E402C-1CD2-453C-B0FA-42FFD0159865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A52E402C-1CD2-453C-B0FA-42FFD0159865}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A52E402C-1CD2-453C-B0FA-42FFD0159865}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A52E402C-1CD2-453C-B0FA-42FFD0159865}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
